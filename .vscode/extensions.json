@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "antfu.goto-alias",
+    "naumovs.color-highlight",
+    "EditorConfig.EditorConfig",
+    "dbaeumer.vscode-eslint",
+    "Vue.volar",
+    "mikestead.dotenv"
+  ]
+}
