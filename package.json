@@ -31,10 +31,17 @@
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish"
   },
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.11.6",
-    "@nuxt/kit": "^3.11.1",
+  "dependencies": {
+    "@floating-ui/vue": "^1.0.6",
+    "@vueuse/core": "^10.9.0",
+    "@vueuse/integrations": "^10.9.0",
     "daisyui": "^4.9.0",
+    "focus-trap": "^7.5.4",
+    "prismjs": "^1.29.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.12.1",
+    "@nuxt/kit": "^3.11.1",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
