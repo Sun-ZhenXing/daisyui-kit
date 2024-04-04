@@ -1,5 +1,6 @@
 <script setup>
 import { inject } from 'vue'
+import Button from './Button.vue'
 
 const id = inject('dropdownId')
 const isOpen = inject('isDropdownOpen')

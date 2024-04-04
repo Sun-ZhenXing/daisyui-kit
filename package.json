@@ -1,13 +1,17 @@
 {
   "name": "@alexsun-top/daisyui-kit",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "private": false,
   "description": "DaisyUI + Vue",
   "author": "Alex Sun",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/Sun-ZhenXing/daisyui-kit"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "main": "index.ts",
   "files": [
@@ -25,6 +29,7 @@
     "lint:fix": "eslint . --fix",
     "publish": "git push origin --tags && git push origin",
     "preview": "nuxt preview",
+    "git-hooks": "simple-git-hooks",
     "postinstall": "nuxt prepare",
     "release:pre": "npm version prerelease && npm publish --tag pre",
     "release:patch": "npm version patch && npm publish",
@@ -42,8 +47,16 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.12.1",
     "@nuxt/kit": "^3.11.1",
+    "lint-staged": "^15.2.2",
     "nuxt": "^3.11.1",
+    "simple-git-hooks": "^2.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "pnpm lint:fix"
   }
 }

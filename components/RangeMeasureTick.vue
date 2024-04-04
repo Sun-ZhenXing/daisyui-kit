@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { computed, watch } from 'vue'
 import { useTimeoutFn } from '@vueuse/core'
+import Button from './Button.vue'
+import Tooltip from './Tooltip.vue'
+import Text from './Text.vue'
 
 const props = defineProps<{
   tick: number

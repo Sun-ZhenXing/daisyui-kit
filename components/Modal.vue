@@ -33,7 +33,7 @@ function handleClick() {
 
 <template>
   <input v-model="isOpen" type="checkbox" class="modal-toggle">
-  <Component
+  <component
     :is="is"
     v-bind="{ ...$attrs, ...$props }"
     class="modal"
@@ -44,5 +44,5 @@ function handleClick() {
     @click.self="handleClick"
   >
     <slot />
-  </Component>
+  </component>
 </template>
