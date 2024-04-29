@@ -14,7 +14,7 @@ export default defineNuxtModule({
 
     nuxt.hook('components:dirs', (dirs) => {
       dirs.push({
-        path: fileURLToPath(new URL('./components', import.meta.url)),
+        path: fileURLToPath(new URL('../components', import.meta.url)),
         prefix,
       })
     })
