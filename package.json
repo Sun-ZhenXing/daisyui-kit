@@ -1,7 +1,7 @@
 {
   "name": "@alexsun-top/daisyui-kit",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "DaisyUI + Vue",
   "author": "Alex Sun",
@@ -40,18 +40,20 @@
     "@floating-ui/vue": "^1.0.6",
     "@vueuse/core": "^10.9.0",
     "@vueuse/integrations": "^10.9.0",
-    "daisyui": "^4.9.0",
     "focus-trap": "^7.5.4",
     "prismjs": "^1.29.0"
   },
+  "optionalDependencies": {
+    "daisyui": "^4.10.2"
+  },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.12.1",
-    "@nuxt/kit": "^3.11.1",
+    "@antfu/eslint-config": "^2.16.0",
+    "@nuxt/kit": "^3.11.2",
     "lint-staged": "^15.2.2",
-    "nuxt": "^3.11.1",
+    "nuxt": "^3.11.2",
     "simple-git-hooks": "^2.11.1",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue": "^3.4.25",
+    "vue-router": "^4.3.2"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
