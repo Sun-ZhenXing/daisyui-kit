@@ -35,7 +35,7 @@ export default {
     onBeforeUpdate(() => {
       if (typeof context.slots.default[0] === 'string') {
         const newText = context.slots.default[0].replace(
-          /^[\r\n\s]*|[\r\n\s]*$/g,
+          /^\s*|\s*$/g,
           '',
         )
         context.el.querySelector('code').textContent = newText

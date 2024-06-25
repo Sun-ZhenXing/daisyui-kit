@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.1.5",
   "private": false,
+  "packageManager": "pnpm@9.4.0",
   "description": "DaisyUI + Vue",
   "author": "Alex Sun",
   "license": "MIT",
@@ -37,23 +38,24 @@
     "release:major": "npm version major && npm publish"
   },
   "dependencies": {
-    "@floating-ui/vue": "^1.0.6",
-    "@vueuse/core": "^10.9.0",
-    "@vueuse/integrations": "^10.9.0",
+    "@floating-ui/vue": "^1.0.7",
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/integrations": "^10.11.0",
     "focus-trap": "^7.5.4",
     "prismjs": "^1.29.0"
   },
   "optionalDependencies": {
-    "daisyui": "^4.10.2"
+    "daisyui": "^4.12.8"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.16.0",
-    "@nuxt/kit": "^3.11.2",
-    "lint-staged": "^15.2.2",
-    "nuxt": "^3.11.2",
+    "@antfu/eslint-config": "^2.21.1",
+    "@nuxt/kit": "^3.12.2",
+    "@nuxt/schema": "^3.12.2",
+    "lint-staged": "^15.2.7",
+    "nuxt": "^3.12.2",
     "simple-git-hooks": "^2.11.1",
-    "vue": "^3.4.25",
-    "vue-router": "^4.3.2"
+    "vue": "^3.4.30",
+    "vue-router": "^4.4.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"
