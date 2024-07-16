@@ -3,7 +3,7 @@ import { computed, inject } from 'vue'
 import Tab from './Tab.vue'
 
 const props = withDefaults(defineProps<{
-  is?: string | object | Function
+  is?: string | object | Component
   tabs?: string[]
 
   variant?: 'bordered' | 'lifted' | 'boxed' | 'inline-boxed'

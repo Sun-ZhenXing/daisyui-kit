@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 
 const props = defineProps<{
-  is?: string | object | Function
+  is?: string | object | Component
 }>()
 
 const tag = computed(() => props.is || 'span')

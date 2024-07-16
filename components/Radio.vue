@@ -57,7 +57,8 @@ const currentValue = computed({
     return props.modelValue
   },
   set(val: string) {
-    radioGroup && (radioGroup.currentValue = val)
+    if (radioGroup)
+      radioGroup.currentValue = val
     emit('update:modelValue', val)
   },
 })
@@ -65,12 +66,7 @@ const currentValue = computed({
 
 <template>
   <input
-    v-model="currentValue"
-    type="radio"
-    v-bind="{ ..._props, ...$attrs }"
-    class="radio"
-    :class="classes"
-    :disabled="disabled"
-    :value="props.value"
+    v-model="currentValue" type="radio" v-bind="{ ..._props, ...$attrs }" class="radio" :class="classes"
+    :disabled="disabled" :value="props.value"
   >
 </template>

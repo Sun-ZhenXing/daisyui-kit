@@ -2,7 +2,7 @@
 import { computed } from 'vue'
 
 const props = withDefaults(defineProps<{
-  is?: string | object | Function
+  is?: string | object | Component
   bordered?: boolean
   compact?: boolean
   side?: boolean

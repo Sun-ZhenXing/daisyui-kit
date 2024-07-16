@@ -2,7 +2,7 @@
 import { computed, inject } from 'vue'
 
 const props = withDefaults(defineProps<{
-  is?: string | object | Function
+  is?: string | object | Component
   name?: string
   active?: boolean
 

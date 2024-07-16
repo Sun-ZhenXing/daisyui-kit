@@ -1,6 +1,6 @@
 <script setup lang="ts">
 withDefaults(defineProps<{
-  is?: string | object | Function
+  is?: string | object | Component
   glass?: boolean
 }>(), {
   is: 'div',
